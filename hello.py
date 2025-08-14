@@ -6,5 +6,5 @@ print("Shensi")
 print("Hello", "Shensi", sep=":)")
 print("Hello", "Shensi", sep="")
 
-name = input("What is your name?")
+name = input("What is your name?").title().slip()
 print("hello,",name)
