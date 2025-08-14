@@ -1,3 +1,10 @@
 #include <stdio.h>
 
-print("hello, world")
+print("Hello", end=" ")
+print("Shensi")
+
+print("Hello", "Shensi", sep=":)")
+print("Hello", "Shensi", sep="")
+
+name = input("What is your name?")
+print("hello,",name)
