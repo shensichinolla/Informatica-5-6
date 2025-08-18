@@ -1,8 +1,10 @@
 #include <stdio.h>
-def hello():
-    print("hello")
+def main():
+    name = input("What is your name?").title().strip()
+    hello(name)
 
-name = input("What is your name?").title().strip()
-hello()
-print(f"hello,{name}")
+def hello(to= "world"):
+    print(f"hello, {to}")
+
+main()
 
