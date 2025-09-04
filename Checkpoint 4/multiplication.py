@@ -5,7 +5,9 @@ def main():
 def multiplication_table(integer):
     i = 1
     while i <= 10:
-        print(integer *  [i])
+        result = integer * i
+        print(f"{integer} x {i} = {result}")
+        i += 1
         
 
 main()      
