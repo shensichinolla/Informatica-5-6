@@ -17,3 +17,4 @@ print(range_of_list(my_list))
 
 def add_values():
     values = []
+    user = int(input("Please add values:"))
