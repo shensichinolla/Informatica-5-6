@@ -1,20 +1,29 @@
-my_list = [9, 4, 2, 11, 18]
+def main():
+    print(length(values()))
+    mean(values())
+    range_of_list(values())
 
-def list_length(my_list): 
-    list_length = len(my_list)
-    return list_length
-print(list_length(my_list))
+def values():
+    value_list = []
+    while True:
+        values = int(input("Please type a value:"))
+        if values !=  0:
+            value_list.append(values)
+            print(value_list)
+            ordered_list = sorted(value_list)
+            print(ordered_list)
+            continue
+        else:
+            break
+    return value_list
 
-def mean_list(my_list):
-    mean_list = sum(my_list)/list_length(my_list)
-    return mean_list
-print(mean_list(my_list))
+def length(list):
+    return len(list)
 
-def range_of_list(my_list):
-    range_of_list = max(my_list)-min(my_list)
-    return range_of_list
-print(range_of_list(my_list))
+def mean(list):
+    print(sum(list) / len(list))
+    
+def range_of_list(list):
+    print(max(list) - min(list))
 
-def add_values():
-    values = []
-    user = int(input("Please add values:"))
+main()
