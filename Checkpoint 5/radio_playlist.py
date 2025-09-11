@@ -1,5 +1,5 @@
 weekly_playlist = ["Blinding Lights", "Levitating", "As It Was", "Heat Waves","Good 4 u"]
-
+print("This is your weekly playlist:",weekly_playlist)
 print("I will add a new song to your list: Drivers License")
 weekly_playlist.append("Drivers License")
 print("I will add at the beginning of your playlist: Bohemian Rhapsody")
