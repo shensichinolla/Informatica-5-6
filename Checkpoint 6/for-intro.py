@@ -14,4 +14,4 @@ school_objective = ["Deepen conversion to Jesus Christ and his restored Gospel",
 
 for objective in school_objective:
     print(objective)
-    print(...)
+    print(":)")
