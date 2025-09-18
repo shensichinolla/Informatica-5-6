@@ -12,10 +12,11 @@
 # file.close()
 
 with open("names.txt", "a") as file:
-    file.write(f"{input("What´s your name?")}")
+    file.write(f"{input('What\'s your name?')}\n")
     
 with open("names.txt", "r") as file:
     lines = file.readlines()
+
+for line in sorted(lines):
+    print(f"Hello, {line.strip()}")
     
-for line in lines: 
-    print(f"Hello {line.rstrip()}")                                             #rstrip removes spaces at the end of the line
