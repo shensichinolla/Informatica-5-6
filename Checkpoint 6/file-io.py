@@ -12,11 +12,11 @@
 # file.close()
 
 with open("names.txt", "a") as file:
-    file.write(f"{input('What\'s your name?')}\n")
+    file.write(f"{input('What\'s your name?')}\n")          #close the file
     
 with open("names.txt", "r") as file:
-    lines = file.readlines()
+    lines = file.readlines()                    #make a list of lines in the file
 
 for line in sorted(lines):
-    print(f"Hello, {line.strip()}")
+    print(f"Hello, {line.strip()}") #put them in alphabetical order
     
