@@ -27,7 +27,7 @@ matrix = [[1,2,3],[4,5,6],[7,8,9]]
 for row in matrix:
     print(row)
 # print columns
-for column in range(3):
+for column in range(3): #repeat for every column, o sea 3 times
     for row in matrix:
         print(row[column])
     
