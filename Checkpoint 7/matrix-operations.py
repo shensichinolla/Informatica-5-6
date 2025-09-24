@@ -18,4 +18,10 @@ my_sum2 = sum_of_column(m,2)
 print(my_sum1)
 print(my_sum2)
 
-      
+
+def change_value(matrix, row_number, column_number, new_value):
+    row = matrix[row_number]
+    row[column_number] = new_value
+print (m)
+change_value(m,2,3,1000) 
+print(m) 
