@@ -28,8 +28,9 @@ for row in matrix:
     print(row)
 # print columns
 for column in range(3): #repeat for every column, o sea 3 times
-    for row in matrix:
-        print(row[column])
-    
+    list = []
+    for row in range(3):
+        list.append(matrix[row][column])
+    print(list)
     
     
