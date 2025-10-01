@@ -5,7 +5,10 @@ def character_counter(message,dictionary):
         dictionary[character] += 1                      #add 1 
     
     print(dictionary)
-
+    print(len(dictionary))
+    
+    # print(list(character_counter.keys()[list(character_counter.vales()).index(max(character_counter.values))]))
+    
 
 message = input("Enter a message: ")
 dictionary = {}
