@@ -1,27 +1,43 @@
-def main():
-    food = {
-        "Whole Milk" : 73,
-        "Almond Milk" : 30,
-        "Plain Yogurt" : 77,
-        "Sour Cream" : 26,
-        "Egg" : 75,
-        "Egg White" : 16,
-        "Blue Cheese" : 119,
-        "Cream Cheese" :51,
-        "Dry almonds" : 170,
-        "Dry Pumpkin seeds" : 126,
-        "Black beans" : 113,
-        "Lentils" : 115,
-        "Salmon" : 175,
-        "Chicken" : 20,
-        "Broccoli" : 7,
-        "Corn" : 59,
-        "Watermelon" : 11,
-        "Banana" : 33,
-        "Ranch" : 73,
-        "Cooked quinoa" : 56
-    }
+
+food = {
+    "Whole Milk" : "73",
+    "Almond Milk" : "30",
+    "Plain Yogurt" : "77",
+    "Sour Cream" : "26",
+    "Egg" : "75",
+    "Egg White" : "16",
+    "Blue Cheese" : "119",
+    "Cream Cheese" :"51",
+    "Dry almonds" : "170",
+    "Dry Pumpkin seeds" : "126",
+    "Black beans" : "113",
+    "Lentils" : "115",
+    "Salmon" : "175",
+    "Chicken" : "20",
+    "Broccoli" : "7",
+    "Corn" : "59",
+    "Watermelon" : "11",
+    "Banana" : "33",
+    "Ranch" : "73",
+    "Cooked quinoa" : "56"
+}
 print("Welcome to food combination!!!")
 first_food = input("Enter your first food choice: ")
 second_food = input("Enter your second food choice: ")
 print("Your choices are", first_food, "and", second_food)
+
+
+
+
+if first_food == "Watermelon" or second_food == "Whole Milk":
+    raise ValueError("DANGERRRRRRRRRR YOU CANT COMBINE WATERMELON AND WHOLE MILK!!!!!!!")
+elif first_food == "Whole Milk" or second_food == "Watermelon":
+    raise ValueError("DANGERRRRRRRRRR YOU CANT COMBINE WATERMELON AND WHOLE MILK!!!!!!!")
+elif first_food not in food and second_food not in food:
+    print("ERROR!! We dont have that food items on our menu.")
+else:
+    if first_food in food and second_food in food:
+        total_calories = int(food[first_food]) + int(food[second_food])
+    print(f"The total calories are: ", total_calories)
+
+    
