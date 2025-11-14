@@ -11,17 +11,13 @@ universities = {
 }
 
 def main():
-    if user == "EAC":
-        print(universities["EAC"]["distance"],["num_majors"],["price"])
-    elif user == "UACJ":
-        print(universities["EAC"]["distance"],["num_majors"],["price"])
-    elif user == "Tecnologico de Monterrey":
-        print(universities["EAC"]["distance"],["num_majors"],["price"])
-    elif user == "La Salle":
-        print(universities["EAC"]["distance"],["num_majors"],["price"])
-    elif user == "UTP":
-        print(universities["EAC"]["distance"],["num_majors"],["price"])
+    name = input("Type the name of the university: ")
+    if name not in universities:
+        print("Sorry, that university is not in our list.")
     else:
-        print("That´s not a valid university, sorry.")
+        uni = universities[name]
+    print(uni)
+    api = requests.get("http://universities.hipolabs.com/search?name="+universities[uni]["officiald_name"])
+    print(api.json())
 
 main()
